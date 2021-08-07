@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         String value = et_temp.getText().toString();
 
         if(TextUtils.isEmpty(value)){
-            Toast.makeText(this, "Enter the temperature!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Enter the temperature!!", Toast.LENGTH_SHORT).show();
         } else {
             Float temp = Float.parseFloat(value);
             if(rd_btn_C.isChecked()){
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             } else if(rd_btn_F.isChecked()) {
                 temp = cal.convertFahrenheitToCelcius(temp);
             } else {
-                Toast.makeText(this, "Select the radio button!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Select the radio button!!", Toast.LENGTH_SHORT).show();
                 temp = 0.0f;
             }
 
